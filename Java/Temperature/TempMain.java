@@ -1,5 +1,7 @@
 import java.util.Scanner; 
 
+//Creating a class and adding `psvm' inside
+
 class TempMain{
   public static void main(String[] args) {
     Scanner number = new Scanner(System.in);

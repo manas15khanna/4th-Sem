@@ -7,6 +7,7 @@ public class checkedandunchecked {
     throw new Exception("This is a checked Exception");
   }
   public static void main(String[] args) {
+    //Todo Auto-generated method stub
     checkedandunchecked c=new checkedandunchecked();
     //no need to handle or declare the unchecked Exception 
     c.throwUncheckedException();

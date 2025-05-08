@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity >=0.7.0 <0.9.0;
+pragma solidity ^0.4.18;
 
 contract DeletingInArray{
     //dynamic array
@@ -19,5 +19,14 @@ contract DeletingInArray{
     }
     function get_x_length() public view returns(uint){
         return myArray.length;
+    }
+
+    function optimized_delete(uint index) public{
+        if(index>=myArray.length) return ; //we don't want to delete from the end of an array
+
+        for(uint i=index; i<myArray.length-1;i++){
+            myArray[i] = myArray[i+1];
+        }
+        myArray.length--;
     }
 }

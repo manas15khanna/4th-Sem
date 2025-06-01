@@ -3,8 +3,8 @@
 pragma solidity >=0.8.2 <0.9.0;
 
 contract Transact {
-    uint256 public x = 12; 
-    string public name = "Cheema Y";
+    uint256 public x = 2; 
+    string public name = "Player One";
 
     function getNumber() public view returns (uint256) {
         return x;
